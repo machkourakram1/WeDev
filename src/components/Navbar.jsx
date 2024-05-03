@@ -11,21 +11,15 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
-      <div className="container px-4 mx-auto relative lg:text-sm">
-        <div className="flex justify-between items-center">
+    <nav className="sticky top-0 z-50 py-5 backdrop-blur-lg border-b border-neutral-700/80">
+      <div className="container px-1 mx-auto relative lg:text-sm">
+        <div className="flex justify-center items-center">
           <div className="flex items-center flex-shrink-0">
             <img className="h-10 w-10 mr-2" src={logo} alt="Logo" />
             <span className="text-xl tracking-tight">WeDev</span>
           </div>
-          <ul className="hidden lg:flex ml-14 space-x-12">
-            {navItems.map((item, index) => (
-              <li key={index}>
-                <a className="hover:text-orange-600 transition duration-200" href={item.href}>{item.label}</a>
-              </li>
-            ))}
-          </ul>
-          <div className="hidden lg:flex justify-center space-x-12 items-center">
+          
+          {/* <div className="hidden lg:flex justify-center space-x-12 items-center">
             <a href="#" className="py-2 px-3 border rounded-md hover:bg-orange-700 transition duration-200">
               Sign In
             </a>
@@ -35,7 +29,7 @@ const Navbar = () => {
             >
               Create an account
             </a>
-          </div>
+          </div> */}
           <div className="lg:hidden md:flex flex-col justify-end">
             <button onClick={toggleNavbar}>
               {mobileDrawerOpen ? <X /> : <Menu />}

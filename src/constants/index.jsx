@@ -1,9 +1,5 @@
-import { BotMessageSquare } from "lucide-react";
-import { BatteryCharging } from "lucide-react";
-import { Fingerprint } from "lucide-react";
-import { ShieldHalf } from "lucide-react";
-import { PlugZap } from "lucide-react";
-import { GlobeLock } from "lucide-react";
+import {Settings, Users, Award, Code, Monitor, Layers, Rocket } from "lucide-react";
+
 
 import user1 from "../assets/profile-pictures/user1.jpg";
 import user2 from "../assets/profile-pictures/user2.jpg";
@@ -13,145 +9,149 @@ import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
 
 export const navItems = [
-  { label: "Features", href: "#" },
-  { label: "Workflow", href: "#" },
-  { label: "Pricing", href: "#" },
-  { label: "Testimonials", href: "#" },
+  { label: "Features", id: "features" },
+  { label: "Workflow", id: "workflow" },
+  { label: "Pricing", id: "pricing" },
+  { label: "Testimonials", id: "testimonials" },
 ];
+
 
 export const testimonials = [
   {
     user: "John Doe",
-    company: "Stellar Solutions",
+    company: "Software Developer",
     image: user1,
-    text: "I am extremely satisfied with the services provided. The team was responsive, professional, and delivered results beyond my expectations.",
+    text: "Thanks to the coding courses provided by WeDev, I was able to transition into a career as a software developer. The courses were comprehensive, easy to follow, and taught me everything I needed to know to succeed in the industry.",
   },
   {
     user: "Jane Smith",
-    company: "Blue Horizon Technologies",
+    company: "Web Developer",
     image: user2,
-    text: "I couldn't be happier with the outcome of our project. The team's creativity and problem-solving skills were instrumental in bringing our vision to life",
+    text: "I'm grateful for the coding education I received from WeDev. It equipped me with the skills and knowledge necessary to become a proficient web developer. The instructors were knowledgeable, and the hands-on projects were invaluable in building my portfolio.",
   },
   {
     user: "David Johnson",
-    company: "Quantum Innovations",
+    company: "App Developer",
     image: user3,
-    text: "Working with this company was a pleasure. Their attention to detail and commitment to excellence are commendable. I would highly recommend them to anyone looking for top-notch service.",
+    text: "WeDev's coding courses provided me with a solid foundation in app development. The curriculum was well-structured, and the practical exercises allowed me to apply what I learned in real-world scenarios. I highly recommend WeDev to anyone looking to kickstart their career in coding.",
   },
   {
-    user: "Ronee Brown",
-    company: "Fusion Dynamics",
+    user: "Emma Wilson",
+    company: "Software Engineer",
     image: user4,
-    text: "Working with the team at XYZ Company was a game-changer for our project. Their attention to detail and innovative solutions helped us achieve our goals faster than we thought possible. We are grateful for their expertise and professionalism!",
+    text: "The coding bootcamp at WeDev was a game-changer for me. It provided me with the skills and confidence to pursue a career in software engineering. The instructors were supportive, and the collaborative learning environment fostered growth and innovation.",
   },
   {
-    user: "Michael Wilson",
-    company: "Visionary Creations",
+    user: "Adam Brown",
+    company: "Full Stack Developer",
     image: user5,
-    text: "I am amazed by the level of professionalism and dedication shown by the team. They were able to exceed our expectations and deliver outstanding results.",
+    text: "Enrolling in WeDev's coding courses was one of the best decisions I've made for my career. The curriculum covered a wide range of topics, from front-end to back-end development, and the hands-on projects helped me build a diverse skill set. I'm now a confident full stack developer thanks to WeDev.",
   },
   {
-    user: "Emily Davis",
-    company: "Synergy Systems",
+    user: "Sophia Davis",
+    company: "UI/UX Designer",
     image: user6,
-    text: "The team went above and beyond to ensure our project was a success. Their expertise and dedication are unmatched. I look forward to working with them again in the future.",
+    text: "I owe my success as a UI/UX designer to WeDev's coding courses. The instructors provided valuable insights into user interface design principles, and the practical exercises allowed me to hone my design skills. WeDev's courses are a must for anyone aspiring to break into the field of UI/UX design.",
   },
 ];
+
 
 export const features = [
   {
-    icon: <BotMessageSquare />,
-    text: "Drag-and-Drop Interface",
+    icon: <Code />,
+    text: "Interactive Coding Exercises",
     description:
-      "Easily design and arrange your VR environments with a user-friendly drag-and-drop interface.",
+      "Practice coding concepts through interactive exercises that reinforce your understanding.",
   },
   {
-    icon: <Fingerprint />,
-    text: "Multi-Platform Compatibility",
+    icon: <Monitor />,
+    text: "Real-Time Code Editor",
     description:
-      "Build VR applications that run seamlessly across multiple platforms, including mobile, desktop, and VR headsets.",
+      "Write and test your code in a real-time editor with instant feedback and error highlighting.",
   },
   {
-    icon: <ShieldHalf />,
-    text: "Built-in Templates",
+    icon: <Users />,
+    text: "Community Support",
     description:
-      "Jumpstart your VR projects with a variety of built-in templates for different types of applications and environments.",
+      "Join a vibrant community of learners and mentors for support, guidance, and collaboration.",
   },
   {
-    icon: <BatteryCharging />,
-    text: "Real-Time Preview",
+    icon: <Layers />,
+    text: "Project-Based Learning",
     description:
-      "Preview your VR application in real-time as you make changes, allowing for quick iterations and adjustments.",
+      "Learn coding by building real-world projects, applying your skills to practical scenarios.",
   },
   {
-    icon: <PlugZap />,
-    text: "Collaboration Tools",
+    icon: <Rocket />,
+    text: "Career Resources",
     description:
-      "Work together with your team in real-time on VR projects, enabling seamless collaboration and idea sharing.",
+      "Access career resources such as resume reviews, interview preparation, and job postings to kickstart your coding career.",
   },
   {
-    icon: <GlobeLock />,
-    text: "Analytics Dashboard",
+    icon: <Award />,
+    text: "Free certificats",
     description:
-      "Gain valuable insights into user interactions and behavior within your VR applications with an integrated analytics dashboard.",
-  },
+      "Gain free cerfificats based on your level of learning.",
+  }
 ];
+
 
 export const checklistItems = [
   {
-    title: "Code merge made easy",
+    title: "Interactive Learning Modules",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Engage with interactive learning modules that cover a wide range of coding topics.",
   },
   {
-    title: "Review code without worry",
+    title: "Practice Coding Challenges",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Sharpen your coding skills with a variety of coding challenges and exercises.",
   },
   {
-    title: "AI Assistance to reduce time",
+    title: "Real-Time Feedback",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Receive instant feedback on your code to improve your coding proficiency.",
   },
   {
-    title: "Share work in minutes",
+    title: "Collaborative Coding Environment",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Collaborate with peers and mentors in a collaborative coding environment to accelerate your learning.",
   },
 ];
 
+
 export const pricingOptions = [
   {
-    title: "Basic",
-    price: "$9.99",
+    title: "Starter",
+    price: "Free",
     features: [
-      "Private board sharing",
-      "50 Gb Storage",
-      "Web Analytics",
-      "Private Mode",
+      "Access to basic coding courses",
+      "Limited coding exercises",
+      "Community support",
     ],
   },
   {
     title: "Pro",
-    price: "$99.99",
+    price: "$29.99/Month",
     features: [
-      "Private board sharing",
-      "100 Gb Storage",
-      "Web Analytics (Advance)",
-      "Private Mode",
+      "Full access to all coding courses",
+      "Unlimited coding exercises",
+      "Priority support",
+      "Career resources",
     ],
   },
   {
-    title: "Enterprise",
-    price: "$200",
+    title: "Team",
+    price: "$99.99/Month",
     features: [
-      "Private board sharing",
-      "Unlimited Storage",
-      "High Performance Network",
-      "Private Mode",
+      "Team access with up to 5 members",
+      "Customized learning paths",
+      "Dedicated mentorship",
+      "Team collaboration tools",
     ],
   },
 ];
+
 
 export const resourcesLinks = [
   { href: "#", text: "Getting Started" },

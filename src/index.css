@@ -8,3 +8,6 @@
   font-family: "Poppins", sans-serif;
   color-scheme: dark;
 }
+*{
+  transition: 0.1s;
+}
